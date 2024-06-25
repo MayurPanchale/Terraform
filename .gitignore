@@ -1,19 +1,9 @@
+# Ignore Terraform .terraform directory
+.terraform/
+
 # Ignore Terraform state files
-*.tfstate
-*.tfstate.*
+terraform.tfstate
+terraform.tfstate.backup
 
-# Ignore .terraform directory
-**/.terraform/*
-
-# Ignore `.tfvars` files which can contain sensitive information
-*.tfvars
-
-# Ignore override files as they are usually used to override resources locally and should not be committed
-override.tf
-override.tf.json
-*_override.tf
-*_override.tf.json
-
-# Ignore CLI configuration files
-.terraformrc
-terraform.rc
+# Ignore lock files
+*.lock.hcl
